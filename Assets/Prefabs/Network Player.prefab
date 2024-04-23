@@ -76,6 +76,7 @@ GameObject:
   - component: {fileID: -1654765246500230663}
   - component: {fileID: 6728718824908926630}
   - component: {fileID: 5356378798025461643}
+  - component: {fileID: 7657418097004187313}
   m_Layer: 0
   m_Name: Network Player
   m_TagString: Untagged
@@ -114,7 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 1729018349
+  GlobalObjectIdHash: 2080680519
   InScenePlacedSourceGlobalObjectIdHash: 2080680519
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
@@ -140,12 +141,20 @@ MonoBehaviour:
   leftHand: {fileID: 3081871479973369695}
   rightHand: {fileID: 1961345211647862659}
   body: {fileID: 1114009285568851249}
+  eventHandler: {fileID: 0}
+  bulletPref: {fileID: 0}
   meshToDisable:
   - {fileID: 40751723654989373}
   - {fileID: 4960047582245112258}
   - {fileID: 4960047582245112258}
   - {fileID: 3376914568001477480}
   - {fileID: 6691340218275335139}
+  bulletSpawnPoint: {fileID: 1795735101370640936, guid: 463d81593369e854db84296b5c8b9a05,
+    type: 3}
+  pistolPrefab: {fileID: 0}
+  currentObj: {fileID: 0}
+  bulletPrefab: {fileID: 6522551731104572902, guid: 8c452167ce8ac1145baefa802cc1a19a,
+    type: 3}
 --- !u!114 &5356378798025461643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,6 +186,19 @@ MonoBehaviour:
   InLocalSpace: 0
   Interpolate: 1
   SlerpPosition: 0
+--- !u!114 &7657418097004187313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4775618520967166104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0d2a4c2dedab1841add90fd59e331db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactor: {fileID: 0}
 --- !u!1 &5144710129577327612
 GameObject:
   m_ObjectHideFlags: 0
