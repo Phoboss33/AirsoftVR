@@ -6,7 +6,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject player;
     [SerializeField] Camera playerHead;
 
+    public Transform[] SpawnPoints;
+
     [ContextMenu("Reset Position")]
+
     public void ResetPosition()
     {
         var rotationAngleY = resetTransform.rotation.eulerAngles.y - playerHead.transform.rotation.eulerAngles.y;
@@ -20,5 +23,16 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         Invoke("ResetPosition", 0.1f);
+    }
+
+    public void TeleportOnPoint(int point)
+    {
+        var rotationAngleY = SpawnPoints[point].rotation.eulerAngles.y - playerHead.transform.rotation.eulerAngles.y;
+
+        player.transform.Rotate(0, rotationAngleY, 0);
+
+        var distanceDiff = SpawnPoints[point].position - playerHead.transform.position;
+
+        player.transform.position += distanceDiff;
     }
 }

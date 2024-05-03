@@ -110,4 +110,5 @@ public class NetworkPlayer : NetworkBehaviour
             netObj.GetComponent<Rigidbody>().isKinematic = value;
         }
     }
+
 }

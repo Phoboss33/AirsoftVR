@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class VrRigPreference : MonoBehaviour
@@ -12,6 +13,8 @@ public class VrRigPreference : MonoBehaviour
     public Transform head;
     public Transform leftHand;
     public Transform rightHand;
+
+    public TextMeshProUGUI text;
 
     private void Awake()
     {
