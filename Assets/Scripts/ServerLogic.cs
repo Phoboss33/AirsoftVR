@@ -10,7 +10,7 @@ public class ServerLogic : NetworkBehaviour
 
     private void Start()
     {
-        playerValue.OnValueChanged += UpdatePlayerCountUI; // ƒобавить callback на изменение значени€
+        playerValue.OnValueChanged += UpdatePlayerCountUI; 
     }
 
     private void UpdatePlayerCountUI(int oldValue, int newValue)
@@ -18,9 +18,9 @@ public class ServerLogic : NetworkBehaviour
         text.text = newValue.ToString();
     }
 
-    [ServerRpc] // јтрибут, указывающий, что метод может быть вызван из клиента на сервере
+    [ServerRpc(RequireOwnership = false)]
     public void IncreasePlayerCountServerRpc()
     {
-        playerValue.Value++; // ќбновить значение сетевой переменной
+        playerValue.Value++;
     }
 }
