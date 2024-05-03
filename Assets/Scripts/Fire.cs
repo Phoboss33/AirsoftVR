@@ -7,6 +7,7 @@ using Unity.Netcode;
 public class Fire : NetworkBehaviour {
     public GameObject bulletPrefab;
     public Transform spawnPoint;
+    public float speed = 20f;
 
     void Start() {
         XRGrabInteractable grabInteractable = GetComponent<XRGrabInteractable>();
@@ -23,8 +24,12 @@ public class Fire : NetworkBehaviour {
     }
 
     // Функция создания пули, которая будет вызываться на сервере
-    private void SpawnBullet(Vector3 position, Quaternion rotation) {
+    // Функция создания пули, которая будет вызываться на сервере
+    private void SpawnBullet(Vector3 position, Quaternion rotation)
+    {
         GameObject bullet = Instantiate(bulletPrefab, position, rotation);
+        Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
+        bulletRb.velocity = rotation * Vector3.forward * speed;
         bullet.GetComponent<NetworkObject>().Spawn();
         Destroy(bullet, 5);
     }
