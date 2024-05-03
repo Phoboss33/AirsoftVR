@@ -7,7 +7,6 @@ using Unity.Netcode;
 public class Fire : NetworkBehaviour {
     public GameObject bulletPrefab;
     public Transform spawnPoint;
-    public float speed = 20f;
 
     void Start() {
         XRGrabInteractable grabInteractable = GetComponent<XRGrabInteractable>();
@@ -16,23 +15,22 @@ public class Fire : NetworkBehaviour {
 
     public void FireBullet(ActivateEventArgs arg) {
         if (IsServer) {
-            SpawnBullet(); 
+            SpawnBullet(spawnPoint.position, spawnPoint.rotation); // Непосредственно создаем пулю на сервере
         }
         else {
-            RequestFireServerRpc(); 
+            RequestFireServerRpc(); // Запрашиваем создание пули на сервере
         }
     }
 
-    
-    private void SpawnBullet() {
-        GameObject bullet = Instantiate(bulletPrefab, spawnPoint.position, Quaternion.identity);
-        bullet.GetComponent<Rigidbody>().velocity = spawnPoint.forward * speed;
+    // Функция создания пули, которая будет вызываться на сервере
+    private void SpawnBullet(Vector3 position, Quaternion rotation) {
+        GameObject bullet = Instantiate(bulletPrefab, position, rotation);
         bullet.GetComponent<NetworkObject>().Spawn();
         Destroy(bullet, 5);
     }
 
     [ServerRpc(RequireOwnership = false)] // Этот метод будет вызван на сервере по запросу клиента
     void RequestFireServerRpc(ServerRpcParams rpcParams = default) {
-        SpawnBullet(); // Вызываем функцию создания пули на сервере
+        SpawnBullet(spawnPoint.position, spawnPoint.rotation); // Вызываем функцию создания пули на сервере
     }
 }
