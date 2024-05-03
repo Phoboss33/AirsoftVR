@@ -13,4 +13,13 @@ public class TeleportScript : MonoBehaviour
             serverLogic.IncreasePlayerCountServerRpc();
         }
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            // вызов ServerRpc для увеличения счетчика
+            serverLogic.decreasePlayerCountServerRpc();
+        }
+    }
 }
