@@ -31,7 +31,7 @@ public class Fire : NetworkBehaviour {
         Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
         bulletRb.velocity = rotation * Vector3.forward * speed;
         bullet.GetComponent<NetworkObject>().Spawn();
-        Destroy(bullet, 5);
+        //Destroy(bullet, 5);
     }
 
     [ServerRpc(RequireOwnership = false)] // Этот метод будет вызван на сервере по запросу клиента
