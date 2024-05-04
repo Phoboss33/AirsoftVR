@@ -843,6 +843,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &5183880585048142205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -886,6 +887,8 @@ CapsuleCollider:
 >>>>>>> parent of 2bf6cdc (fixed death)
 =======
 >>>>>>> parent of 2bf6cdc (fixed death)
+=======
+>>>>>>> parent of d918aae (shoot is workin)
 =======
 >>>>>>> parent of d918aae (shoot is workin)
 =======
