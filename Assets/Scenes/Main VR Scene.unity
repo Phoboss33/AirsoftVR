@@ -10511,6 +10511,7 @@ MonoBehaviour:
   SpawnPoints:
   - {fileID: 811110692}
   - {fileID: 1481937125}
+  - {fileID: 1011304598}
 --- !u!1 &1122243139
 GameObject:
   m_ObjectHideFlags: 0
