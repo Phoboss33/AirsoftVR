@@ -2,6 +2,8 @@ using Unity.Netcode;
 using TMPro;
 using UnityEngine;
 using System.Collections;
+using System;
+using Unity.VisualScripting;
 
 public class ServerLogic : NetworkBehaviour
 {
@@ -13,6 +15,7 @@ public class ServerLogic : NetworkBehaviour
     private Coroutine timerCoroutine;
     private int countdownTime = 10;
     private bool timerIsActive = false;
+    public static Action action;
 
 
     private void Start()
@@ -60,11 +63,17 @@ public class ServerLogic : NetworkBehaviour
             timeLeft--;
         }
 
+        if (timeLeft == 0)
+        {
+
+        }
+
         timerIsActive = false;
         text.text = "0"; 
-        UpdatePlayerCountUI(0, playerValue.Value); 
-
+        UpdatePlayerCountUI(0, playerValue.Value);
         timerCoroutine = null;
+
+        action?.Invoke();
     }
 
 

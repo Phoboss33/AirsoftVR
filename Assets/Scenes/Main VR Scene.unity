@@ -20230,7 +20230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerValue:
     m_InternalValue: 0
-  maxPlayerCount: 2
+  maxPlayerCount: 1
   text: {fileID: 1209114578}
 --- !u!4 &1991342119
 Transform:
