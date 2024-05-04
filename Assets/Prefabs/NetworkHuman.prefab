@@ -742,10 +742,9 @@ GameObject:
   - component: {fileID: 4678640637396151725}
   - component: {fileID: 86660189563284154}
   - component: {fileID: -5549681474935349058}
-  - component: {fileID: 5183880585048142205}
   m_Layer: 0
   m_Name: NetworkHuman
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -841,6 +840,7 @@ MonoBehaviour:
   InLocalSpace: 0
   Interpolate: 1
   SlerpPosition: 0
+<<<<<<< HEAD
 --- !u!114 &5183880585048142205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -884,6 +884,8 @@ CapsuleCollider:
 >>>>>>> parent of 2bf6cdc (fixed death)
 =======
 >>>>>>> parent of 2bf6cdc (fixed death)
+=======
+>>>>>>> parent of d918aae (shoot is workin)
 --- !u!1 &1622509643078353300
 GameObject:
   m_ObjectHideFlags: 0
