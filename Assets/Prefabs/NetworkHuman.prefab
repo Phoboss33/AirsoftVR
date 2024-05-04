@@ -743,7 +743,6 @@ GameObject:
   - component: {fileID: 86660189563284154}
   - component: {fileID: -5549681474935349058}
   - component: {fileID: 5183880585048142205}
-  - component: {fileID: -6218137077680555297}
   m_Layer: 0
   m_Name: NetworkHuman
   m_TagString: Player
@@ -854,6 +853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 293cfe3a96683864695f2fe74ed2ca13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   health:
     m_InternalValue: 3
 --- !u!136 &-6218137077680555297
@@ -879,6 +879,8 @@ CapsuleCollider:
   m_Height: 1.97
   m_Direction: 1
   m_Center: {x: 0.65, y: -0.4, z: 0.65}
+=======
+>>>>>>> parent of 2bf6cdc (fixed death)
 --- !u!1 &1622509643078353300
 GameObject:
   m_ObjectHideFlags: 0

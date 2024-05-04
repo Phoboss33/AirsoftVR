@@ -19,8 +19,13 @@ public class BulletTrigger : NetworkBehaviour {
 
     private void Update() {
         if (health.Value <= 0) {
+<<<<<<< HEAD
            
             DieServerRpc();
+=======
+            print("Умер");
+            Die();
+>>>>>>> parent of 2bf6cdc (fixed death)
         }
     }
 
