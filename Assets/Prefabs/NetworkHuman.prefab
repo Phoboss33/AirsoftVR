@@ -854,6 +854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
+<<<<<<< HEAD
   health:
     m_InternalValue: 3
 --- !u!136 &-6218137077680555297
@@ -879,6 +880,8 @@ CapsuleCollider:
   m_Height: 1.97
   m_Direction: 1
   m_Center: {x: 0.65, y: -0.4, z: 0.65}
+=======
+>>>>>>> parent of 2bf6cdc (fixed death)
 =======
 >>>>>>> parent of 2bf6cdc (fixed death)
 --- !u!1 &1622509643078353300
