@@ -841,6 +841,7 @@ MonoBehaviour:
   Interpolate: 1
   SlerpPosition: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &5183880585048142205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -884,6 +885,8 @@ CapsuleCollider:
 >>>>>>> parent of 2bf6cdc (fixed death)
 =======
 >>>>>>> parent of 2bf6cdc (fixed death)
+=======
+>>>>>>> parent of d918aae (shoot is workin)
 =======
 >>>>>>> parent of d918aae (shoot is workin)
 --- !u!1 &1622509643078353300
