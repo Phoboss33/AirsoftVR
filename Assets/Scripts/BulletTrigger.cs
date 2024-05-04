@@ -20,7 +20,7 @@ public class BulletTrigger : NetworkBehaviour {
     private void Update() {
         if (health.Value <= 0) {
            
-            Die();
+            DieServerRpc();
         }
     }
 
@@ -37,8 +37,8 @@ public class BulletTrigger : NetworkBehaviour {
             TakeDamageServerRpc(damage);
         }
     }
-
-    private void Die() {
+    [ServerRpc]
+    private void DieServerRpc() {
         if (IsServer) {
             print($"{OwnerClientId} - Умер!!");
             Destroy(gameObject);
