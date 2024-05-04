@@ -13,7 +13,7 @@ public class ServerLogic : NetworkBehaviour
     public TextMeshProUGUI text;
 
     private Coroutine timerCoroutine;
-    private int countdownTime = 10;
+    public int countdownTime = 10;
     private bool timerIsActive = false;
     public static Action action;
 
