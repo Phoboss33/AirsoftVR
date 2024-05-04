@@ -19,31 +19,28 @@ public class BulletTrigger : NetworkBehaviour {
 
     private void Update() {
         if (health.Value <= 0) {
-           
+
             Die();
         }
     }
 
-    [ServerRpc(RequireOwnership = false)]
+    [ServerRpc]
     private void TakeDamageServerRpc(int damage, ServerRpcParams rpcParams = default) {
         health.Value -= damage;
     }
 
     private void TakeDamage(int damage) {
-        if (IsServer) {
-            health.Value -= damage;
-        }
-        else {
-            TakeDamageServerRpc(damage);
-        }
+        TakeDamageServerRpc(damage);
+    }
+
+    [ServerRpc]
+    private void DieServerRpc(ServerRpcParams rpcParams = default) {
+        print($"{OwnerClientId} - Умер!!");
+        Destroy(gameObject);
+        NetworkObject.Despawn();
     }
 
     private void Die() {
-        if (IsServer) {
-            print($"{OwnerClientId} - Умер!!");
-            Destroy(gameObject);
-            NetworkObject.Despawn();
-            
-        }
+        DieServerRpc();
     }
 }
