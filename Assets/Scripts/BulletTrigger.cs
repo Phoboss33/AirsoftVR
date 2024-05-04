@@ -19,7 +19,7 @@ public class BulletTrigger : NetworkBehaviour {
 
     private void Update() {
         if (health.Value <= 0) {
-            print("Умер");
+           
             Die();
         }
     }
