@@ -9216,6 +9216,7 @@ PrefabInstance:
     m_AddedGameObjects: []
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 812661075848489531, guid: 7748a62fb02e1cd4fbca0d4d2a1c6834,
         type: 3}
@@ -9231,6 +9232,9 @@ PrefabInstance:
 =======
     m_AddedComponents: []
 >>>>>>> parent of d918aae (shoot is workin)
+=======
+    m_AddedComponents: []
+>>>>>>> parent of d918aae (shoot is workin)
   m_SourcePrefab: {fileID: 100100000, guid: 7748a62fb02e1cd4fbca0d4d2a1c6834, type: 3}
 --- !u!4 &958778885 stripped
 Transform:
@@ -9238,6 +9242,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 958778884}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!114 &958778889
@@ -9275,6 +9280,8 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+=======
+>>>>>>> parent of d918aae (shoot is workin)
 =======
 >>>>>>> parent of d918aae (shoot is workin)
 =======
