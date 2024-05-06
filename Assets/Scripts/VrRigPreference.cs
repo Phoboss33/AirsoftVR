@@ -14,7 +14,7 @@ public class VrRigPreference : MonoBehaviour
     public Transform leftHand;
     public Transform rightHand;
 
-    public TextMeshProUGUI text;
+    public GameObject localPlayerGameObject;
 
     private void Awake()
     {
