@@ -11,7 +11,7 @@ public class NetworkPlayer : NetworkBehaviour
     public Transform rightHand;
     public Transform body;
 
-    public GameObject localPlayerObj;
+    
 
     private GameObject XRRig;
     public Renderer[] meshToDisable;
@@ -62,7 +62,7 @@ public class NetworkPlayer : NetworkBehaviour
             rightHand.position = VrRigPreference.Singleton.rightHand.position;
             rightHand.rotation = VrRigPreference.Singleton.rightHand.rotation;
             body.position = head.position;
-            localPlayerObj = VrRigPreference.Singleton.localPlayerGameObject;
+            
 
             body.rotation = Quaternion.Euler(body.rotation.eulerAngles.x, head.rotation.eulerAngles.y, body.rotation.eulerAngles.z);
         
@@ -113,12 +113,4 @@ public class NetworkPlayer : NetworkBehaviour
             netObj.GetComponent<Rigidbody>().isKinematic = value;
         }
     }
-
-    [ContextMenu("Press for invise")]
-    [ServerRpc] public void PlayerIsDieServerRpc()
-    {
-        localPlayerObj.gameObject.SetActive(false);
-        localPlayerObj.gameObject.GetComponent<PlayerInGameBehavior>().InviseMe();
-    }
-
 }
