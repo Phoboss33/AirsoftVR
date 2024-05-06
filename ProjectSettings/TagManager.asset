@@ -7,6 +7,7 @@ TagManager:
   - BulletSpawner
   - BulletSpawn
   - Bullet
+  - Swat
   layers:
   - Default
   - TransparentFX

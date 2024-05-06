@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.21215841, g: 0.21215841, b: 0.21215841, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10538,6 +10538,19 @@ MonoBehaviour:
   SpawnPoints:
   - {fileID: 811110692}
   - {fileID: 1481937125}
+--- !u!114 &1117760908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117760891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 301c54782fb354343ac6006d6b968aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  geoMesh: {fileID: 1117760891}
 --- !u!1 &1122243139
 GameObject:
   m_ObjectHideFlags: 0
@@ -24592,6 +24605,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1117760900}
+    - targetCorrespondingSourceObject: {fileID: 5834385273463674453, guid: a0e552e598d50cc408f6988c31b17365,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1117760908}
   m_SourcePrefab: {fileID: 100100000, guid: a0e552e598d50cc408f6988c31b17365, type: 3}
 --- !u!1 &4441848305757453216
 GameObject:
