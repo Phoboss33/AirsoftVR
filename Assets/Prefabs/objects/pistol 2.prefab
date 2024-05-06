@@ -92,7 +92,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9439c5503f0742e41846c83e8ee638d9, type: 2}
+  - {fileID: 2100000, guid: 96ddc87eb6c915d4189291da4c79bd25, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 1706378045170033543}
   - component: {fileID: 3328443911427320247}
   m_Layer: 3
-  m_Name: pistol
+  m_Name: pistol 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -368,7 +368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 1631334666
+  GlobalObjectIdHash: 3167141658
   InScenePlacedSourceGlobalObjectIdHash: 4109631846
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1

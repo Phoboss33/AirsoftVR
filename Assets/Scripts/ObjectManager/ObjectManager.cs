@@ -37,6 +37,7 @@ namespace Core.Base
                 {
                     // Помещаем префаб в словарь привязки к игрокам
                     _playerObjectsToSpawn[clientId] = playerObjectPrefabs[prefabIndex];
+                    Debug.LogError($"prefabId: {prefabIndex}; client: {clientId}");
                 }
                 else
                 {
