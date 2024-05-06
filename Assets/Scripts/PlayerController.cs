@@ -1,6 +1,8 @@
+using Core.Base;
+using Unity.Netcode;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : NetworkBehaviour
 {
     [SerializeField] private Transform resetTransform;
     [SerializeField] GameObject player;
@@ -34,5 +36,7 @@ public class PlayerController : MonoBehaviour
         var distanceDiff = SpawnPoints[point].position - playerHead.transform.position;
 
         player.transform.position += distanceDiff;
+        // spawn object
+        ObjectManager.Instance.SpawnPlayerObject(NetworkManager.Singleton.LocalClientId, SpawnPoints[point].position);
     }
 }
