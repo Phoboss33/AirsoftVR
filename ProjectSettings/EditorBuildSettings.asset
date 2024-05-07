@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main VR Scene.unity
     guid: 11cffb3f25cd59e4fa62922f585edf23
+  - enabled: 1
+    path: Assets/Scenes/Main VR Scene ObjectManager.unity
+    guid: 97364f9b22c945e41aadf53dc0ca0d38
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 22a2e5ccfff23f6429fcac735ea9ac93,
       type: 2}
