@@ -7,9 +7,11 @@ using UnityEngine;
 public class EliminateBeh : NetworkBehaviour
 {
     public GameObject myGeo;
+    public Transform SpawnPosition;
     public override void OnNetworkSpawn()
     {
         base.OnNetworkSpawn();
+        SpawnPosition = GameObject.FindGameObjectWithTag("DieSpawnPoint");
 
     }
 
