@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
 
     public Transform[] SpawnPoints;
 
+    public Transform[] SpawnPointObjects;
+
     [ContextMenu("Reset Position")]
 
     public void ResetPosition()
@@ -37,6 +39,6 @@ public class PlayerController : MonoBehaviour
 
         player.transform.position += distanceDiff;
         
-        ObjectManager.Instance.RequestSpawnSelectedObject(NetworkManager.Singleton.LocalClientId, SpawnPoints[point].position);
+        ObjectManager.Instance.RequestSpawnSelectedObject(NetworkManager.Singleton.LocalClientId, SpawnPointObjects[point].position);
     }
 }
