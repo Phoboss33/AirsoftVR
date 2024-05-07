@@ -37,6 +37,6 @@ public class PlayerController : MonoBehaviour
 
         player.transform.position += distanceDiff;
         
-        ObjectManager.Instance.SpawnPlayerObject(NetworkManager.Singleton.LocalClientId, SpawnPoints[point].position);
+        ObjectManager.Instance.RequestSpawnSelectedObject(NetworkManager.Singleton.LocalClientId, SpawnPoints[point].position);
     }
 }

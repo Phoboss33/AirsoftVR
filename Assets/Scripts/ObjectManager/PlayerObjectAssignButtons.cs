@@ -15,7 +15,7 @@ namespace Core.Base
                 ulong localClientId = NetworkManager.Singleton.LocalClientId;
 
                 // Вызываем метод привязки объекта из нашего Singleton-а
-                ObjectManager.Instance.AssignPlayerObject(localClientId, prefabIndex);
+                ObjectManager.Instance.SelectAndRequestAssignPlayerObject(localClientId, prefabIndex);
             }
         }
     }

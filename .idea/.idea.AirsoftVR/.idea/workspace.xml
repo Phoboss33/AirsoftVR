@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ee0d41c5-6d71-4456-ace3-eb73ecdc7d2b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AirsoftVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AirsoftVR/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Cam_1.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Cam_1.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Cam_2.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Cam_2.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Cam_3.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Cam_3.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Cam_4.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Cam_4.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pistol/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pistol/Bullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main VR Scene ObjectManager.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main VR Scene ObjectManager.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectManager/ObjectManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ObjectManager/ObjectManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectManager/PlayerObjectAssignButtons.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ObjectManager/PlayerObjectAssignButtons.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
@@ -102,7 +101,7 @@
       <workItem from="1714993230555" duration="13322000" />
       <workItem from="1715068355490" duration="1729000" />
       <workItem from="1715072680485" duration="72000" />
-      <workItem from="1715072760371" duration="2272000" />
+      <workItem from="1715072760371" duration="4718000" />
     </task>
     <servers />
   </component>

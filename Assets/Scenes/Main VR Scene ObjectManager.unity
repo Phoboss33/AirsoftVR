@@ -17315,7 +17315,7 @@ GameObject:
   - component: {fileID: 1325550603}
   - component: {fileID: 1325550602}
   m_Layer: 0
-  m_Name: 1_PointRed (1)
+  m_Name: SpawnLobby
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
